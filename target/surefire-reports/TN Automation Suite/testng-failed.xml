@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TN Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.tn.listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="TN Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.tn.testcases.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyLoginWithValidCredentials"/>
+        </methods>
+      </class> <!-- com.tn.testcases.LoginTest -->
+    </classes>
+  </test> <!-- TN Tests(failed) -->
+</suite> <!-- Failed suite [TN Automation Suite] -->
